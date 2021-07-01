@@ -8,8 +8,9 @@ else
   fi
   
   make O=out ARCH=arm64 RMX1901_defconfig
+sattire=`find / -type d -name "proton-clang" 2>/dev/null`
 
-PATH="/media/theglitchh/hercules/mystuff/tools/proton-clang/bin:$PATH" \
+PATH="$sattire/bin:$PATH" \
  
   make                O=out \
                       ARCH=arm64 \
