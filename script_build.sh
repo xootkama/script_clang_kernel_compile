@@ -7,7 +7,7 @@ else
   mkdir -p out
   fi
   
-  make O=out ARCH=arm64 X00TD_defconfig
+  make O=out ARCH=arm64 KharaMe_defconfig
 sattire=`find / -type d -name "gcc" 2>/dev/null`
 
 PATH="$sattire/bin:$PATH" \
